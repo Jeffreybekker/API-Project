@@ -1,2 +1,2 @@
-# API Project (restaurant)
+# Little Lemon API Restaurant
 ## Description
