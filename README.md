@@ -2,4 +2,6 @@
 
 # Table of Contents
 * [Little Lemon API Restaurant](#little-lemon-api-restaurant)
-## Description
+    * [Installation](#installation)
+    * [Endpoints](#endpoints)
+        
