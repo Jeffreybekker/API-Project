@@ -1,6 +1,6 @@
 # Little Lemon API Restaurant
 
-# Table of Contents
+## Table of Contents
 * [Little Lemon API Restaurant](#little-lemon-api-restaurant)
     * [Installation](#installation)
     * [Endpoints](#endpoints)
@@ -12,7 +12,7 @@
         * [Orders](#orders)
     * Admin Panel
 
-# Installation
+## Installation
 1. Clone the Repository:
 ```
 git clone https://github.com/Jeffreybekker/API-Project.git
@@ -30,14 +30,14 @@ pip install -r requirements.txt
 ```
 python manage.py runserver
 ```
-# Endpoints
+## Endpoints
 
-## Menu Items
-## Category
-## Group Managers
-## Group Delivery Crew
-## Cart Menu Items
-## Orders
+### Menu Items
+### Category
+### Group Managers
+### Group Delivery Crew
+### Cart Menu Items
+### Orders
 
-# Admin Panel
+## Admin Panel
         
