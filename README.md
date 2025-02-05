@@ -33,6 +33,7 @@ python manage.py runserver
 ## Endpoints
 
 ### Menu Items
+### Get all or Post Menu Items
 ```
 http://127.0.0.1:8000/api/menu-items/
 ```
