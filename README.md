@@ -44,9 +44,13 @@ http://127.0.0.1:8000/api/menu-items/{id}
 ```
 http://127.0.0.1:8000/api/category/
 ```
+### Single Category
+```
+http://127.0.0.1:8000/api/category/{id}
+```
 ### Group Managers
 ```
-http://127.0.0.1:8000/api/menu-items/
+http://127.0.0.1:8000/api/groups/manager/users
 ```
 ### Group Delivery Crew
 ```
