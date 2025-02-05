@@ -52,6 +52,10 @@ http://127.0.0.1:8000/api/category/{id}
 ```
 http://127.0.0.1:8000/api/groups/manager/users
 ```
+### Remove single manager 
+```
+http://127.0.0.1:8000/api/groups/manager/users
+```
 ### Group Delivery Crew
 ```
 http://127.0.0.1:8000/api/menu-items/
