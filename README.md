@@ -36,7 +36,7 @@ python manage.py runserver
 ```
 http://127.0.0.1:8000/api/menu-items/
 ```
-#### Single menu item
+### Single menu item
 ```
 http://127.0.0.1:8000/api/menu-items/{id}
 ```
