@@ -54,7 +54,7 @@ http://127.0.0.1:8000/api/groups/manager/users
 ```
 ### Remove single manager 
 ```
-http://127.0.0.1:8000/api/groups/manager/users
+http://127.0.0.1:8000/api/groups/manager/users{id}
 ```
 ### Group Delivery Crew
 ```
