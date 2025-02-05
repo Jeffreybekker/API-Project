@@ -4,7 +4,12 @@
 * [Little Lemon API Restaurant](#little-lemon-api-restaurant)
     * [Installation](#installation)
     * [Endpoints](#endpoints)
-        * [](#)
+        * [Menu Items](#menu-items)
+        * [Category](#category)
+        * [Group Managers](#group-managers)
+        * [Group Delivery Crew](#group-delivery-crew)
+        * [Cart Menu Items](#cart-menu-items)
+        * [Orders](#orders)
     * Admin Panel
 
 # Installation
@@ -26,4 +31,13 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 # Endpoints
+
+## Menu Items
+## Category
+## Group Managers
+## Group Delivery Crew
+## Cart Menu Items
+## Orders
+
+# Admin Panel
         
