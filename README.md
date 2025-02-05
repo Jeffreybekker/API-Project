@@ -10,7 +10,7 @@
         * [Group Delivery Crew](#group-delivery-crew)
         * [Cart Menu Items](#cart-menu-items)
         * [Orders](#orders)
-    * Admin Panel
+    * [Admin Panel](#admin-panel)
 
 ## Installation
 1. Clone the Repository:
