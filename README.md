@@ -33,10 +33,17 @@ python manage.py runserver
 ## Endpoints
 
 ### Menu Items
+```
+http://127.0.0.1:8000/api/menu-items/
+```
 ### Category
+
 ### Group Managers
+
 ### Group Delivery Crew
+
 ### Cart Menu Items
+
 ### Orders
 
 ## Admin Panel
