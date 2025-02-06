@@ -110,6 +110,29 @@ http://127.0.0.1:8000/auth/token/login/
 ```
 http://127.0.0.1:8000/auth/token/logout/
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Auth token</th>
+			<th>Required Fields</th>
+			<th>Status code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>POST</td>
+			<td>User logout</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>204 No Content</td>
+		</tr>
+	</tbody>
+</table>
+
+![image](https://github.com/user-attachments/assets/b2c09e07-68eb-42d0-99fd-e88775625f7d)
+
 ### API Endpoints
 #### Menu Items
 ```
