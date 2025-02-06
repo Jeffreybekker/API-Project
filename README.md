@@ -78,7 +78,7 @@ http://127.0.0.1:8000/api/category/{id}
 ```
 #### Managers
 ```
-http://127.0.0.1:8000/api/groups/manager/users
+http://127.0.0.1:8000/api/groups/manager/users/
 ```
 #### Delete Manager
 ```
@@ -86,23 +86,23 @@ http://127.0.0.1:8000/api/groups/manager/users{id}
 ```
 #### Delivery Crew
 ```
-http://127.0.0.1:8000/api/menu-items/
+http://127.0.0.1:8000/api/groups/delivery-crew/users/
 ```
 #### Delete Delivery Member
 ```
-http://127.0.0.1:8000/api/menu-items/
+http://127.0.0.1:8000/api/groups/delivery-crew/users/{id}
 ```
 #### Cart Menu Items
 ```
-http://127.0.0.1:8000/api/menu-items/
+http://127.0.0.1:8000/api/cart/menu-items/
 ```
 #### Orders
 ```
-http://127.0.0.1:8000/api/menu-items/
+http://127.0.0.1:8000/api/orders/
 ```
 #### Single Order
 ```
-http://127.0.0.1:8000/api/menu-items/
+http://127.0.0.1:8000/api/orders/{id}
 ```
 ## Admin Panel
         
