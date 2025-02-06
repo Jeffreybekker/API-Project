@@ -5,7 +5,7 @@
     * [Installation](#installation)
     * [Endpoints](#endpoints)
         * [User Endpoints](#user-endpoints)
-           * [User(s)](#user)
+           * [Users](#users)
            * [User Auth Token](#user-auth-token)
            * [User Information](#user-information)
            * [User Logout](#user-logout)
@@ -43,7 +43,7 @@ python manage.py runserver
 ```
 ## Endpoints
 ### User Endpoints
-#### User(s)
+#### Users
 ```
 http://127.0.0.1:8000/auth/users/
 ```
