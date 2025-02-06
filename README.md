@@ -98,7 +98,7 @@ http://127.0.0.1:8000/auth/token/login/
 			<td>POST</td>
 			<td>Retrieve Auth Token</td>
 			<td>No</td>
-			<th>-</th>
+			<td>- username<br>- password</td>
 			<td>200 OK</td>
 		</tr>
 	</tbody>
