@@ -56,14 +56,14 @@ http://127.0.0.1:8000/auth/users/
 			<th>Status code</th>
 		</tr>
 	</thead>
-	<tbody>
+<!-- 	<tbody>
 		<tr>
 			<td>POST</td>
 			<td>Create new user</td>
 			<td>No</td>
 			<td>201 Created</td>
 		</tr>
-	</tbody>
+	</tbody> -->
 </table>
 
 #### User Auth Token
