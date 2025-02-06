@@ -71,7 +71,7 @@ http://127.0.0.1:8000/auth/users/
 			<td>Create a user</td>
 			<td>No</td>
 			<td>- username<br>- email<br>- password</td>
-			<td>200 OK</td>
+			<td>201 Created</td>
 		</tr>
 	</tbody>
 </table>
