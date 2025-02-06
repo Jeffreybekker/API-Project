@@ -76,6 +76,10 @@ http://127.0.0.1:8000/auth/users/
 	</tbody>
 </table>
 
+*Example of creating a user:*
+![image](https://github.com/user-attachments/assets/e64a7fa0-939e-4251-bbc6-a4422d8c4067)
+
+
 #### User Auth Token
 ```
 http://127.0.0.1:8000/auth/token/login/
