@@ -70,6 +70,27 @@ http://127.0.0.1:8000/auth/users/
 ```
 http://127.0.0.1:8000/auth/token/login/
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Auth token</th>
+			<th>Status code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>POST</td>
+			<td>Retrieve Auth Token</td>
+			<td>No</td>
+			<td>200 OK</td>
+		</tr>
+	</tbody>
+</table>
+
+![image](https://github.com/user-attachments/assets/15e1f94c-e61b-404c-a85c-5e7a1c9ed16b)
+
 #### User Information
 ```
 http://127.0.0.1:8000/auth/users/me/
