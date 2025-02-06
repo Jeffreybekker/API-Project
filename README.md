@@ -4,12 +4,17 @@
 * [Little Lemon API Restaurant](#little-lemon-api-restaurant)
     * [Installation](#installation)
     * [Endpoints](#endpoints)
-        * [Menu Items](#menu-items)
-        * [Category](#category)
-        * [Group Managers](#group-managers)
-        * [Group Delivery Crew](#group-delivery-crew)
-        * [Cart Menu Items](#cart-menu-items)
-        * [Orders](#orders)
+        * [User Endpoints](#user-endpoints)
+        * [Restaurant Endpoints](#restaurant-endpoints)
+           * [Menu Items](#menu-items)
+           * [Single Menu Item](#single-menu-item)
+           * [Categories](#categories)
+           * [Single Category](#single-category)
+           * [Group Managers](#group-managers)
+           * [Delete Manager](#delete-manager)
+           * [Group Delivery Crew](#group-delivery-crew)
+           * [Cart Menu Items](#cart-menu-items)
+           * [Orders](#orders)
     * [Admin Panel](#admin-panel)
 
 ## Installation
@@ -31,40 +36,42 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 ## Endpoints
+### User Endpoints
 
-### All Menu Items
+### Restaurant Endpoints
+#### Menu Items
 ```
 http://127.0.0.1:8000/api/menu-items/
 ```
-### Single menu item
+#### Single Menu Item
 ```
 http://127.0.0.1:8000/api/menu-items/{id}
 ```
-### All Categories
+#### Categories
 ```
 http://127.0.0.1:8000/api/category/
 ```
-### Single Category
+#### Single Category
 ```
 http://127.0.0.1:8000/api/category/{id}
 ```
-### Group Managers
+#### Group Managers
 ```
 http://127.0.0.1:8000/api/groups/manager/users
 ```
-### Remove single manager 
+#### Delete Manager
 ```
 http://127.0.0.1:8000/api/groups/manager/users{id}
 ```
-### Group Delivery Crew
+#### Group Delivery Crew
 ```
 http://127.0.0.1:8000/api/menu-items/
 ```
-### Cart Menu Items
+#### Cart Menu Items
 ```
 http://127.0.0.1:8000/api/menu-items/
 ```
-### Orders
+#### Orders
 ```
 http://127.0.0.1:8000/api/menu-items/
 ```
