@@ -65,6 +65,7 @@ http://127.0.0.1:8000/auth/users/
 		</tr>
 	</tbody>
 </table>
+
 #### User Auth Token
 ```
 http://127.0.0.1:8000/auth/token/login/
