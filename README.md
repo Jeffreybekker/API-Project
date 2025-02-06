@@ -90,6 +90,7 @@ http://127.0.0.1:8000/auth/token/login/
 			<th>HTTP Method</th>
 			<th>Action</th>
 			<th>Auth token</th>
+			<th>Required Fields</th>
 			<th>Status code</th>
 		</tr>
 	</thead>
@@ -98,6 +99,7 @@ http://127.0.0.1:8000/auth/token/login/
 			<td>POST</td>
 			<td>Retrieve Auth Token</td>
 			<td>No</td>
+			<th>-</th>
 			<td>200 OK</td>
 		</tr>
 	</tbody>
