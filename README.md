@@ -7,6 +7,7 @@
         * [User Endpoints](#user-endpoints)
            * [Users](#users)
            * [User Auth Token](#user-auth-token)
+           * [User Management](#user-management)
            * [User Logout](#user-logout)
         * [API Endpoints](#api-endpoints)
            * [Menu Items](#menu-items)
@@ -78,7 +79,6 @@ http://127.0.0.1:8000/auth/users/
 *Example of creating a user:*
 ![image](https://github.com/user-attachments/assets/e64a7fa0-939e-4251-bbc6-a4422d8c4067)
 
-
 #### User Auth Token
 ```
 http://127.0.0.1:8000/auth/token/login/
@@ -105,6 +105,42 @@ http://127.0.0.1:8000/auth/token/login/
 </table>
 
 ![image](https://github.com/user-attachments/assets/15e1f94c-e61b-404c-a85c-5e7a1c9ed16b)
+
+#### User Management
+```
+http://127.0.0.1:8000/auth/users/me/
+```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Auth Token</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>DELETE</td>
+			<td>Deletes a user</td>
+			<td>Yes</td>
+			<td>- current_password</td>
+			<td>204 No Content</td>
+		</tr>
+	</tbody>
+</table>
+
+*Note: Example of how to delete a user. It takes a current_password and auth token:*
+![image](https://github.com/user-attachments/assets/06f1183c-37a4-4889-9bda-1461d72d318a)
+
 
 #### User Logout
 ```
