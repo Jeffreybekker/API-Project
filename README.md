@@ -5,7 +5,7 @@
     * [Installation](#installation)
     * [Endpoints](#endpoints)
         * [User Endpoints](#user-endpoints)
-           * [User(s)](#user(s))
+           * [User(s)](#user)
            * [User Auth Token](#user-auth-token)
            * [User Information](#user-information)
            * [User Logout](#user-logout)
