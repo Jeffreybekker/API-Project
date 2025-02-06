@@ -7,16 +7,16 @@
         * [User Endpoints](#user-endpoints)
         * [Restaurant Endpoints](#restaurant-endpoints)
            * [Menu Items](#menu-items)
-           * [Specific Menu Item](#specific-menu-item)
+           * [Single Menu Item](#single-menu-item)
            * [Categories](#categories)
-           * [Specific Category](#specific-category)
+           * [Single Category](#single-category)
            * [Managers](#managers)
            * [Delete Manager](#delete-manager)
            * [Delivery Crew](#delivery-crew)
            * [Delete Delivery Member](#delete-delivery-member)
            * [Cart Menu Items](#cart-menu-items)
            * [Orders](#orders)
-           * [Specific Order](#specific-order)
+           * [Single Order](#single-order)
     * [Admin Panel](#admin-panel)
 
 ## Installation
@@ -45,7 +45,7 @@ python manage.py runserver
 ```
 http://127.0.0.1:8000/api/menu-items/
 ```
-#### Specific Menu Item
+#### Single Menu Item
 ```
 http://127.0.0.1:8000/api/menu-items/{id}
 ```
@@ -53,7 +53,7 @@ http://127.0.0.1:8000/api/menu-items/{id}
 ```
 http://127.0.0.1:8000/api/category/
 ```
-#### Specific Category
+#### Single Category
 ```
 http://127.0.0.1:8000/api/category/{id}
 ```
@@ -81,7 +81,7 @@ http://127.0.0.1:8000/api/menu-items/
 ```
 http://127.0.0.1:8000/api/menu-items/
 ```
-#### Specific Order
+#### Single Order
 ```
 http://127.0.0.1:8000/api/menu-items/
 ```
