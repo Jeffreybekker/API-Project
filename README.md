@@ -69,7 +69,7 @@ http://127.0.0.1:8000/auth/users/
 			<td>POST</td>
 			<td>Create a user</td>
 			<td>No</td>
-			<th>username<br>email<br>password</th>
+			<th>username</th>
 			<td>200 OK</td>
 		</tr>
 	</tbody>
