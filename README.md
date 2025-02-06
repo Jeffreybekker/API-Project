@@ -7,14 +7,16 @@
         * [User Endpoints](#user-endpoints)
         * [Restaurant Endpoints](#restaurant-endpoints)
            * [Menu Items](#menu-items)
-           * [Single Menu Item](#single-menu-item)
+           * [Specific Menu Item](#single-menu-item)
            * [Categories](#categories)
-           * [Single Category](#single-category)
-           * [Group Managers](#group-managers)
+           * [Specific Category](#single-category)
+           * [Managers](#managers)
            * [Delete Manager](#delete-manager)
-           * [Group Delivery Crew](#group-delivery-crew)
+           * [Delivery Crew](#delivery-crew)
+           * [Delete Delivery Member](#delete-delivery-member)
            * [Cart Menu Items](#cart-menu-items)
            * [Orders](#orders)
+           * [Specific Order](#specific-order)
     * [Admin Panel](#admin-panel)
 
 ## Installation
@@ -43,7 +45,7 @@ python manage.py runserver
 ```
 http://127.0.0.1:8000/api/menu-items/
 ```
-#### Single Menu Item
+#### Specific Menu Item
 ```
 http://127.0.0.1:8000/api/menu-items/{id}
 ```
@@ -51,19 +53,23 @@ http://127.0.0.1:8000/api/menu-items/{id}
 ```
 http://127.0.0.1:8000/api/category/
 ```
-#### Single Category
+#### Specific Category
 ```
 http://127.0.0.1:8000/api/category/{id}
 ```
-#### Group Managers
+#### Managers
 ```
 http://127.0.0.1:8000/api/groups/manager/users
 ```
-#### Delete Manager
+#### Delete a Manager
 ```
 http://127.0.0.1:8000/api/groups/manager/users{id}
 ```
-#### Group Delivery Crew
+#### Delivery Crew
+```
+http://127.0.0.1:8000/api/menu-items/
+```
+#### Delete Delivery Member
 ```
 http://127.0.0.1:8000/api/menu-items/
 ```
@@ -75,6 +81,9 @@ http://127.0.0.1:8000/api/menu-items/
 ```
 http://127.0.0.1:8000/api/menu-items/
 ```
-
+#### Specific Order
+```
+http://127.0.0.1:8000/api/menu-items/
+```
 ## Admin Panel
         
