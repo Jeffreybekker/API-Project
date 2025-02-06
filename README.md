@@ -1,13 +1,29 @@
 # Little Lemon API Restaurant
 
-# Table of Contents
+## Table of Contents
 * [Little Lemon API Restaurant](#little-lemon-api-restaurant)
     * [Installation](#installation)
     * [Endpoints](#endpoints)
-        * [](#)
-    * Admin Panel
+        * [User Endpoints](#user-endpoints)
+           * [Users](#users)
+           * [User Auth Token](#user-auth-token)
+           * [User Information](#user-information)
+           * [User Logout](#user-logout)
+        * [API Endpoints](#api-endpoints)
+           * [Menu Items](#menu-items)
+           * [Single Menu Item](#single-menu-item)
+           * [Categories](#categories)
+           * [Single Category](#single-category)
+           * [Managers](#managers)
+           * [Delete Manager](#delete-manager)
+           * [Delivery Crew](#delivery-crew)
+           * [Delete Delivery Member](#delete-delivery-member)
+           * [Cart Menu Items](#cart-menu-items)
+           * [Orders](#orders)
+           * [Single Order](#single-order)
+    * [Admin Panel](#admin-panel)
 
-# Installation
+## Installation
 1. Clone the Repository:
 ```
 git clone https://github.com/Jeffreybekker/API-Project.git
@@ -25,5 +41,68 @@ pip install -r requirements.txt
 ```
 python manage.py runserver
 ```
-# Endpoints
+## Endpoints
+### User Endpoints
+#### Users
+```
+http://127.0.0.1:8000/auth/users/
+```
+#### User Auth Token
+```
+http://127.0.0.1:8000/auth/token/login/
+```
+#### User Information
+```
+http://127.0.0.1:8000/auth/users/me/
+```
+#### User Logout
+```
+http://127.0.0.1:8000/auth/token/logout/
+```
+### API Endpoints
+#### Menu Items
+```
+http://127.0.0.1:8000/api/menu-items/
+```
+#### Single Menu Item
+```
+http://127.0.0.1:8000/api/menu-items/{id}
+```
+#### Categories
+```
+http://127.0.0.1:8000/api/category/
+```
+#### Single Category
+```
+http://127.0.0.1:8000/api/category/{id}
+```
+#### Managers
+```
+http://127.0.0.1:8000/api/groups/manager/users/
+```
+#### Delete Manager
+```
+http://127.0.0.1:8000/api/groups/manager/users{id}
+```
+#### Delivery Crew
+```
+http://127.0.0.1:8000/api/groups/delivery-crew/users/
+```
+#### Delete Delivery Member
+```
+http://127.0.0.1:8000/api/groups/delivery-crew/users/{id}
+```
+#### Cart Menu Items
+```
+http://127.0.0.1:8000/api/cart/menu-items/
+```
+#### Orders
+```
+http://127.0.0.1:8000/api/orders/
+```
+#### Single Order
+```
+http://127.0.0.1:8000/api/orders/{id}
+```
+## Admin Panel
         
