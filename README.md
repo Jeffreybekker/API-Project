@@ -53,7 +53,7 @@ http://127.0.0.1:8000/auth/users/
 			<th>HTTP Method</th>
 			<th>Action</th>
 			<th>Auth token</th>
-			<th>Required Fields</th>
+			<th>Required</th>
 			<th>Status code</th>
 		</tr>
 	</thead>
@@ -69,7 +69,7 @@ http://127.0.0.1:8000/auth/users/
 			<td>POST</td>
 			<td>Create a user</td>
 			<td>No</td>
-			<th>username</th>
+			<th>username<br>email<br>password</th>
 			<td>200 OK</td>
 		</tr>
 	</tbody>
