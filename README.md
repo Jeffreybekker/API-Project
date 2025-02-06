@@ -62,14 +62,14 @@ http://127.0.0.1:8000/auth/users/
 			<td>GET</td>
 			<td>Retrieve user based on token</td>
 			<td>Yes</td>
-			<th>-</th>
+			<td>-</td>
 			<td>200 OK</td>
 		</tr>
 		<tr>
 			<td>POST</td>
 			<td>Create a user</td>
 			<td>No</td>
-			<th>username<br>email<br>password</th>
+			<td>* username<br>* email<br>* password</td>
 			<td>200 OK</td>
 		</tr>
 	</tbody>
