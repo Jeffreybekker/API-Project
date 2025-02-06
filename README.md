@@ -47,6 +47,7 @@ python manage.py runserver
 ```
 http://127.0.0.1:8000/auth/users/
 ```
+*Note: only the admin can retrieve all the users. The others can retrieve only themselves.*
 <table>
 	<thead>
 		<tr>
