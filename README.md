@@ -53,17 +53,26 @@ http://127.0.0.1:8000/auth/users/
 			<th>HTTP Method</th>
 			<th>Action</th>
 			<th>Auth token</th>
+			<th>Required Fields</th>
 			<th>Status code</th>
 		</tr>
 	</thead>
-<!-- 	<tbody>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>None</th>
+			<td>200 OK</td>
+		</tr>
 		<tr>
 			<td>POST</td>
-			<td>Create new user</td>
+			<td>Create a user</td>
 			<td>No</td>
-			<td>201 Created</td>
+			<th>* username<br>* email<br>* password</th>
+			<td>200 OK</td>
 		</tr>
-	</tbody> -->
+	</tbody>
 </table>
 
 #### User Auth Token
