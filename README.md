@@ -192,7 +192,7 @@ http://127.0.0.1:8000/api/groups/manager/users/
 ```
 #### Delete Manager
 ```
-http://127.0.0.1:8000/api/groups/manager/users{id}
+http://127.0.0.1:8000/api/groups/manager/users/{id}
 ```
 #### Delivery Crew
 ```
