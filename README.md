@@ -7,7 +7,6 @@
         * [User Endpoints](#user-endpoints)
            * [Users](#users)
            * [User Auth Token](#user-auth-token)
-           * [User Information](#user-information)
            * [User Logout](#user-logout)
         * [API Endpoints](#api-endpoints)
            * [Menu Items](#menu-items)
@@ -107,10 +106,6 @@ http://127.0.0.1:8000/auth/token/login/
 
 ![image](https://github.com/user-attachments/assets/15e1f94c-e61b-404c-a85c-5e7a1c9ed16b)
 
-#### User Information
-```
-http://127.0.0.1:8000/auth/users/me/
-```
 #### User Logout
 ```
 http://127.0.0.1:8000/auth/token/logout/
