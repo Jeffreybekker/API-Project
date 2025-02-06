@@ -52,9 +52,9 @@ http://127.0.0.1:8000/auth/users/
 		<tr>
 			<th>HTTP Method</th>
 			<th>Action</th>
-			<th>Auth token</th>
-			<th>Required</th>
-			<th>Status code</th>
+			<th>Auth Token</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -62,7 +62,7 @@ http://127.0.0.1:8000/auth/users/
 			<td>GET</td>
 			<td>Retrieve user based on token</td>
 			<td>Yes</td>
-			<td>-</td>
+			<th>-</th>
 			<td>200 OK</td>
 		</tr>
 		<tr>
