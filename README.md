@@ -5,7 +5,11 @@
     * [Installation](#installation)
     * [Endpoints](#endpoints)
         * [User Endpoints](#user-endpoints)
-        * [Restaurant Endpoints](#restaurant-endpoints)
+           * [User(s)](#user(s))
+           * [User Auth Token](#user-auth-token)
+           * [User Information](#user-information)
+           * [User Logout](#user-logout)
+        * [API Endpoints](#api-endpoints)
            * [Menu Items](#menu-items)
            * [Single Menu Item](#single-menu-item)
            * [Categories](#categories)
@@ -39,8 +43,23 @@ python manage.py runserver
 ```
 ## Endpoints
 ### User Endpoints
-
-### Restaurant Endpoints
+#### User(s)
+```
+http://127.0.0.1:8000/auth/users/
+```
+#### User Auth Token
+```
+http://127.0.0.1:8000/auth/token/login/
+```
+#### User Information
+```
+http://127.0.0.1:8000/auth/users/me/
+```
+#### User Logout
+```
+http://127.0.0.1:8000/auth/token/logout/
+```
+### API Endpoints
 #### Menu Items
 ```
 http://127.0.0.1:8000/api/menu-items/
