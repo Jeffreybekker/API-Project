@@ -194,7 +194,7 @@ http://127.0.0.1:8000/api/menu-items/
 		<tr>
 			<td>POST</td>
 			<td>Add a menu item</td>
-			<td>Manager<br>Admin</td>
+			<td>Managers<br>Admin</td>
 			<td>"title",<br>"price",<br>"featured" (true, false),<br>"category_id"</td>
 			<td>201 Created</td>
 		</tr>
@@ -224,7 +224,7 @@ http://127.0.0.1:8000/api/menu-items/{id}
 		<tr>
 			<td>GET</td>
 			<td>Get a single menu item</td>
-			<td>Customer<br>Manager<br>Admin</td>
+			<td>Customers<br>Managers<br>Admin</td>
 			<th>-</th>
 			<td>200 OK</td>
 		</tr>
