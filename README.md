@@ -141,7 +141,6 @@ http://127.0.0.1:8000/auth/users/me/
 *Note: Example of how to delete a user. It takes a current_password and auth token:*
 ![image](https://github.com/user-attachments/assets/06f1183c-37a4-4889-9bda-1461d72d318a)
 
-
 #### User Logout
 ```
 http://127.0.0.1:8000/auth/token/logout/
@@ -225,7 +224,21 @@ http://127.0.0.1:8000/api/menu-items/{id}
 			<td>200 OK</td>
 		</tr>
 		<tr>
-			<td>POST</td>
+			<td>PUT</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+		<tr>
+			<td>PATCH</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+		<tr>
+			<td>DELETE</td>
 			<td>Create a user</td>
 			<td>No</td>
 			<td>- username<br>- email<br>- password</td>
@@ -295,6 +308,27 @@ http://127.0.0.1:8000/api/category/{id}
 			<td>- username<br>- email<br>- password</td>
 			<td>201 Created</td>
 		</tr>
+		<tr>
+			<td>PUT</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+		<tr>
+			<td>PATCH</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+		<tr>
+			<td>DELETE</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -327,6 +361,13 @@ http://127.0.0.1:8000/api/groups/manager/users/
 			<td>- username<br>- email<br>- password</td>
 			<td>201 Created</td>
 		</tr>
+		<tr>
+			<td>DELETE</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -346,18 +387,11 @@ http://127.0.0.1:8000/api/groups/manager/users/{id}
 	</thead>
 	<tbody>
 		<tr>
-			<td>GET</td>
+			<td>DELETE</td>
 			<td>Retrieve user based on token</td>
 			<td>Yes</td>
 			<th>-</th>
 			<td>200 OK</td>
-		</tr>
-		<tr>
-			<td>POST</td>
-			<td>Create a user</td>
-			<td>No</td>
-			<td>- username<br>- email<br>- password</td>
-			<td>201 Created</td>
 		</tr>
 	</tbody>
 </table>
@@ -410,18 +444,11 @@ http://127.0.0.1:8000/api/groups/delivery-crew/users/{id}
 	</thead>
 	<tbody>
 		<tr>
-			<td>GET</td>
+			<td>DELETE</td>
 			<td>Retrieve user based on token</td>
 			<td>Yes</td>
 			<th>-</th>
 			<td>200 OK</td>
-		</tr>
-		<tr>
-			<td>POST</td>
-			<td>Create a user</td>
-			<td>No</td>
-			<td>- username<br>- email<br>- password</td>
-			<td>201 Created</td>
 		</tr>
 	</tbody>
 </table>
@@ -450,6 +477,13 @@ http://127.0.0.1:8000/api/cart/menu-items/
 		</tr>
 		<tr>
 			<td>POST</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+		<tr>
+			<td>DELETE</td>
 			<td>Create a user</td>
 			<td>No</td>
 			<td>- username<br>- email<br>- password</td>
@@ -513,7 +547,21 @@ http://127.0.0.1:8000/api/orders/{id}
 			<td>200 OK</td>
 		</tr>
 		<tr>
-			<td>POST</td>
+			<td>PUT</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+		<tr>
+			<td>PATCH</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+		<tr>
+			<td>DELETE</td>
 			<td>Create a user</td>
 			<td>No</td>
 			<td>- username<br>- email<br>- password</td>
