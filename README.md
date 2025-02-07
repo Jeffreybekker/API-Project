@@ -223,28 +223,28 @@ http://127.0.0.1:8000/api/menu-items/{id}
 	<tbody>
 		<tr>
 			<td>GET</td>
-			<td>Get a single menu item</td>
+			<td>Get a menu item</td>
 			<td>Customers<br>Managers<br>Admin</td>
 			<th>-</th>
 			<td>200 OK</td>
 		</tr>
 		<tr>
 			<td>PUT</td>
-			<td>Create a user</td>
+			<td>Update menu item</td>
 			<td>No</td>
 			<td>- username<br>- email<br>- password</td>
 			<td>201 Created</td>
 		</tr>
 		<tr>
 			<td>PATCH</td>
-			<td>Create a user</td>
+			<td>Partially update menu item</td>
 			<td>No</td>
 			<td>- username<br>- email<br>- password</td>
 			<td>201 Created</td>
 		</tr>
 		<tr>
 			<td>DELETE</td>
-			<td>Create a user</td>
+			<td>Delete menu item</td>
 			<td>No</td>
 			<td>- username<br>- email<br>- password</td>
 			<td>201 Created</td>
