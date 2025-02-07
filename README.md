@@ -178,7 +178,7 @@ http://127.0.0.1:8000/api/menu-items/
 		<tr>
 			<th>HTTP Method</th>
 			<th>Action</th>
-			<th>Auth Token</th>
+			<th>Role</th>
 			<th>Required Fields</th>
 			<th>Status Code</th>
 		</tr>
@@ -186,20 +186,25 @@ http://127.0.0.1:8000/api/menu-items/
 	<tbody>
 		<tr>
 			<td>GET</td>
-			<td>Retrieve user based on token</td>
-			<td>Yes</td>
+			<td>Retrieve all menu items</td>
+			<td>Customers<br>Managers<br>Admin</td>
 			<th>-</th>
 			<td>200 OK</td>
 		</tr>
 		<tr>
 			<td>POST</td>
-			<td>Create a user</td>
-			<td>No</td>
-			<td>- username<br>- email<br>- password</td>
+			<td>Add a menu item</td>
+			<td>Manager<br>Admin</td>
+			<td>"title"<br>"price"<br>"featured" (true, false)<br>"category_id"</td>
 			<td>201 Created</td>
 		</tr>
 	</tbody>
 </table>
+
+*Example of a POST request for adding a menu item, authorized as a manager:*
+![image](https://github.com/user-attachments/assets/b2d06c5f-8a9f-44cf-bf64-eb5040a9c7fa)
+
+
 
 #### Single Menu Item
 ```
