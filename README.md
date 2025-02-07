@@ -174,45 +174,353 @@ http://127.0.0.1:8000/auth/token/logout/
 ```
 http://127.0.0.1:8000/api/menu-items/
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Auth Token</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>POST</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+	</tbody>
+</table>
+
 #### Single Menu Item
 ```
 http://127.0.0.1:8000/api/menu-items/{id}
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Auth Token</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>POST</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+	</tbody>
+</table>
+
 #### Categories
 ```
 http://127.0.0.1:8000/api/category/
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Auth Token</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>POST</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+	</tbody>
+</table>
+
 #### Single Category
 ```
 http://127.0.0.1:8000/api/category/{id}
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Auth Token</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>POST</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+	</tbody>
+</table>
+
 #### Managers
 ```
 http://127.0.0.1:8000/api/groups/manager/users/
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Auth Token</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>POST</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+	</tbody>
+</table>
+
 #### Delete Manager
 ```
 http://127.0.0.1:8000/api/groups/manager/users/{id}
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Auth Token</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>POST</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+	</tbody>
+</table>
+
 #### Delivery Crew
 ```
 http://127.0.0.1:8000/api/groups/delivery-crew/users/
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Auth Token</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>POST</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+	</tbody>
+</table>
+
 #### Delete Delivery Member
 ```
 http://127.0.0.1:8000/api/groups/delivery-crew/users/{id}
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Auth Token</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>POST</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+	</tbody>
+</table>
+
 #### Cart Menu Items
 ```
 http://127.0.0.1:8000/api/cart/menu-items/
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Auth Token</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>POST</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+	</tbody>
+</table>
+
 #### Orders
 ```
 http://127.0.0.1:8000/api/orders/
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Auth Token</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>POST</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+	</tbody>
+</table>
+
 #### Single Order
 ```
 http://127.0.0.1:8000/api/orders/{id}
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Auth Token</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>POST</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+	</tbody>
+</table>
+
 ## Admin Panel
         
