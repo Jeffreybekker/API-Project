@@ -223,8 +223,8 @@ http://127.0.0.1:8000/api/menu-items/{id}
 	<tbody>
 		<tr>
 			<td>GET</td>
-			<td>Retrieve user based on token</td>
-			<td>Yes</td>
+			<td>Get a single menu item</td>
+			<td>Customer<br>Manager<br>Admin</td>
 			<th>-</th>
 			<td>200 OK</td>
 		</tr>
