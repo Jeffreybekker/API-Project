@@ -215,7 +215,7 @@ http://127.0.0.1:8000/api/menu-items/{id}
 		<tr>
 			<th>HTTP Method</th>
 			<th>Action</th>
-			<th>Auth Token</th>
+			<th>Role</th>
 			<th>Required Fields</th>
 			<th>Status Code</th>
 		</tr>
@@ -261,7 +261,7 @@ http://127.0.0.1:8000/api/category/
 		<tr>
 			<th>HTTP Method</th>
 			<th>Action</th>
-			<th>Auth Token</th>
+			<th>Role</th>
 			<th>Required Fields</th>
 			<th>Status Code</th>
 		</tr>
@@ -293,7 +293,7 @@ http://127.0.0.1:8000/api/category/{id}
 		<tr>
 			<th>HTTP Method</th>
 			<th>Action</th>
-			<th>Auth Token</th>
+			<th>Role</th>
 			<th>Required Fields</th>
 			<th>Status Code</th>
 		</tr>
@@ -346,7 +346,7 @@ http://127.0.0.1:8000/api/groups/manager/users/
 		<tr>
 			<th>HTTP Method</th>
 			<th>Action</th>
-			<th>Auth Token</th>
+			<th>Role</th>
 			<th>Required Fields</th>
 			<th>Status Code</th>
 		</tr>
@@ -385,7 +385,7 @@ http://127.0.0.1:8000/api/groups/manager/users/{id}
 		<tr>
 			<th>HTTP Method</th>
 			<th>Action</th>
-			<th>Auth Token</th>
+			<th>Role</th>
 			<th>Required Fields</th>
 			<th>Status Code</th>
 		</tr>
@@ -410,7 +410,7 @@ http://127.0.0.1:8000/api/groups/delivery-crew/users/
 		<tr>
 			<th>HTTP Method</th>
 			<th>Action</th>
-			<th>Auth Token</th>
+			<th>Role</th>
 			<th>Required Fields</th>
 			<th>Status Code</th>
 		</tr>
@@ -442,7 +442,7 @@ http://127.0.0.1:8000/api/groups/delivery-crew/users/{id}
 		<tr>
 			<th>HTTP Method</th>
 			<th>Action</th>
-			<th>Auth Token</th>
+			<th>Role</th>
 			<th>Required Fields</th>
 			<th>Status Code</th>
 		</tr>
@@ -467,7 +467,7 @@ http://127.0.0.1:8000/api/cart/menu-items/
 		<tr>
 			<th>HTTP Method</th>
 			<th>Action</th>
-			<th>Auth Token</th>
+			<th>Role</th>
 			<th>Required Fields</th>
 			<th>Status Code</th>
 		</tr>
@@ -506,7 +506,7 @@ http://127.0.0.1:8000/api/orders/
 		<tr>
 			<th>HTTP Method</th>
 			<th>Action</th>
-			<th>Auth Token</th>
+			<th>Role</th>
 			<th>Required Fields</th>
 			<th>Status Code</th>
 		</tr>
@@ -538,7 +538,7 @@ http://127.0.0.1:8000/api/orders/{id}
 		<tr>
 			<th>HTTP Method</th>
 			<th>Action</th>
-			<th>Auth Token</th>
+			<th>Role</th>
 			<th>Required Fields</th>
 			<th>Status Code</th>
 		</tr>
