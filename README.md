@@ -269,15 +269,15 @@ http://127.0.0.1:8000/api/category/
 	<tbody>
 		<tr>
 			<td>GET</td>
-			<td>Retrieve user based on token</td>
-			<td>Yes</td>
+			<td>Retrieve all categories</td>
+			<td>Customers<br>Managers<br>Admin</td>
 			<th>-</th>
 			<td>200 OK</td>
 		</tr>
 		<tr>
 			<td>POST</td>
-			<td>Create a user</td>
-			<td>No</td>
+			<td>Add a category</td>
+			<td></td>
 			<td>- username<br>- email<br>- password</td>
 			<td>201 Created</td>
 		</tr>
