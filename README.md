@@ -70,7 +70,7 @@ http://127.0.0.1:8000/auth/users/
 			<td>POST</td>
 			<td>Create a user</td>
 			<td>No</td>
-			<td>- username<br>- email<br>- password</td>
+			<td>"username",<br>"email",<br>"password"</td>
 			<td>201 Created</td>
 		</tr>
 	</tbody>
@@ -98,7 +98,7 @@ http://127.0.0.1:8000/auth/token/login/
 			<td>POST</td>
 			<td>Retrieve Auth Token</td>
 			<td>No</td>
-			<td>- username<br>- password</td>
+			<td>"username",<br>"password"</td>
 			<td>200 OK</td>
 		</tr>
 	</tbody>
@@ -132,7 +132,7 @@ http://127.0.0.1:8000/auth/users/me/
 			<td>DELETE</td>
 			<td>Deletes a user</td>
 			<td>Yes</td>
-			<td>- current_password</td>
+			<td>"current_password"</td>
 			<td>204 No Content</td>
 		</tr>
 	</tbody>
@@ -195,7 +195,7 @@ http://127.0.0.1:8000/api/menu-items/
 			<td>POST</td>
 			<td>Add a menu item</td>
 			<td>Manager<br>Admin</td>
-			<td>"title"<br>"price"<br>"featured" (true, false)<br>"category_id"</td>
+			<td>"title",<br>"price",<br>"featured" (true, false),<br>"category_id"</td>
 			<td>201 Created</td>
 		</tr>
 	</tbody>
