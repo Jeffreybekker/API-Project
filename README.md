@@ -240,7 +240,7 @@ http://127.0.0.1:8000/api/menu-items/{id}
 			<td>Update menu item</td>
 			<td>Managers<br>Admin</td>
 			<td>"title",<br>"price",<br>"featured",<br>"category_id"</td>
-			<td>201 Created</td>
+			<td>200 OK</td>
 		</tr>
 		<tr>
 			<td>DELETE</td>
