@@ -138,7 +138,7 @@ http://127.0.0.1:8000/auth/users/me/
 	</tbody>
 </table>
 
-*Note: Example of how to delete a user. It takes a current_password and auth token:*
+*Example of how to delete a user. It takes a current_password and auth token:*
 ![image](https://github.com/user-attachments/assets/06f1183c-37a4-4889-9bda-1461d72d318a)
 
 #### User Logout
@@ -186,8 +186,8 @@ http://127.0.0.1:8000/api/menu-items/
 	<tbody>
 		<tr>
 			<td>GET</td>
-			<td>Retrieve all menu items</td>
-			<td>Customers<br>Managers<br>Admin</td>
+			<td>Get all menu items</td>
+			<td>Customers<br>Delivery Crew<br>Managers<br>Admin</td>
 			<th>-</th>
 			<td>200 OK</td>
 		</tr>
@@ -203,8 +203,6 @@ http://127.0.0.1:8000/api/menu-items/
 
 *Example of a POST request for adding a menu item, authorized as a manager:*
 ![image](https://github.com/user-attachments/assets/b2d06c5f-8a9f-44cf-bf64-eb5040a9c7fa)
-
-
 
 #### Single Menu Item
 ```
@@ -224,7 +222,7 @@ http://127.0.0.1:8000/api/menu-items/{id}
 		<tr>
 			<td>GET</td>
 			<td>Get a menu item</td>
-			<td>Customers<br>Managers<br>Admin</td>
+			<td>Customers<br>Delivery Crew<br>Managers<br>Admin</td>
 			<th>-</th>
 			<td>200 OK</td>
 		</tr>
@@ -255,7 +253,6 @@ http://127.0.0.1:8000/api/menu-items/{id}
 *Example of a PUT request with the required request fields:*
 ![image](https://github.com/user-attachments/assets/7d77388a-1d03-455d-82f7-f61c0228fccc)
 
-
 #### Categories
 ```
 http://127.0.0.1:8000/api/category/
@@ -273,20 +270,23 @@ http://127.0.0.1:8000/api/category/
 	<tbody>
 		<tr>
 			<td>GET</td>
-			<td>Retrieve all categories</td>
-			<td>Customers<br>Managers<br>Admin</td>
+			<td>Get all categories</td>
+			<td>Customers<br>Delivery Crew<br>Managers<br>Admin</td>
 			<th>-</th>
 			<td>200 OK</td>
 		</tr>
 		<tr>
 			<td>POST</td>
 			<td>Add a category</td>
-			<td>Managers</td>
-			<td>- username<br>- email<br>- password</td>
+			<td>Managers<br>Admin</td>
+			<td>"slug",<br>"title"</td>
 			<td>201 Created</td>
 		</tr>
 	</tbody>
 </table>
+
+*Example of a POST request for adding a category:*
+![image](https://github.com/user-attachments/assets/1a64cda6-2eb2-4ebd-ac46-90dfbc74706f)
 
 #### Single Category
 ```
