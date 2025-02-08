@@ -305,41 +305,44 @@ http://127.0.0.1:8000/api/category/{id}
 	<tbody>
 		<tr>
 			<td>GET</td>
-			<td>Retrieve category</td>
-			<td>Customers<br>Manangers<br>Admin</td>
+			<td>Get a category</td>
+			<td>Customers<br>Delivery Crew<br>Manangers<br>Admin</td>
 			<th>-</th>
 			<td>200 OK</td>
 		</tr>
 		<tr>
 			<td>POST</td>
-			<td>Create a user</td>
-			<td>No</td>
-			<td>- username<br>- email<br>- password</td>
-			<td>201 Created</td>
+			<td>Not allowed</td>
+			<th>-</th>
+			<th>-</th>
+			<td>403 Forbidden</td>
 		</tr>
 		<tr>
 			<td>PUT</td>
-			<td>Create a user</td>
-			<td>No</td>
-			<td>- username<br>- email<br>- password</td>
-			<td>201 Created</td>
+			<td>Update a category</td>
+			<td>Managers<br>Admin</td>
+			<td>"slug",<br>"title"</td>
+			<td>205 Reset Content</td>
 		</tr>
 		<tr>
 			<td>PATCH</td>
-			<td>Create a user</td>
-			<td>No</td>
-			<td>- username<br>- email<br>- password</td>
-			<td>201 Created</td>
+			<td>Partially update a category</td>
+			<td>Managers<br>Admin</td>
+			<td>"slug",<br>AND/OR:<br>"title"</td>
+			<td>205 Reset Content</td>
 		</tr>
 		<tr>
 			<td>DELETE</td>
-			<td>Create a user</td>
-			<td>No</td>
-			<td>- username<br>- email<br>- password</td>
-			<td>201 Created</td>
+			<td>Delete a category</td>
+			<td>Managers<br>Admin</td>
+			<th>-</th>
+			<td>204 No Content</td>
 		</tr>
 	</tbody>
 </table>
+
+*Example of a PUT request for renaming the category:*
+![image](https://github.com/user-attachments/assets/04151b15-7e95-4727-9a38-f1724d3025fa)
 
 #### Managers
 ```
