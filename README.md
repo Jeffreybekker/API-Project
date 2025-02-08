@@ -7,7 +7,7 @@
         * [User Endpoints](#user-endpoints)
            * [Users](#users)
            * [User Auth Token](#user-auth-token)
-           * [User Information](#user-information)
+           * [User Management](#user-management)
            * [User Logout](#user-logout)
         * [API Endpoints](#api-endpoints)
            * [Menu Items](#menu-items)
@@ -47,62 +47,540 @@ python manage.py runserver
 ```
 http://127.0.0.1:8000/auth/users/
 ```
+*Note: only the admin can retrieve all the users. The others can retrieve only themselves.*
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Auth Token</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>POST</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>"username",<br>"email",<br>"password"</td>
+			<td>201 Created</td>
+		</tr>
+	</tbody>
+</table>
+
+*Example of creating a user:*
+![image](https://github.com/user-attachments/assets/e64a7fa0-939e-4251-bbc6-a4422d8c4067)
+
 #### User Auth Token
 ```
 http://127.0.0.1:8000/auth/token/login/
 ```
-#### User Information
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Auth token</th>
+			<th>Required Fields</th>
+			<th>Status code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>POST</td>
+			<td>Retrieve Auth Token</td>
+			<td>No</td>
+			<td>"username",<br>"password"</td>
+			<td>200 OK</td>
+		</tr>
+	</tbody>
+</table>
+
+![image](https://github.com/user-attachments/assets/15e1f94c-e61b-404c-a85c-5e7a1c9ed16b)
+
+#### User Management
 ```
 http://127.0.0.1:8000/auth/users/me/
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Auth Token</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>DELETE</td>
+			<td>Deletes a user</td>
+			<td>Yes</td>
+			<td>"current_password"</td>
+			<td>204 No Content</td>
+		</tr>
+	</tbody>
+</table>
+
+*Example of how to delete a user. It takes a current_password and auth token:*
+![image](https://github.com/user-attachments/assets/06f1183c-37a4-4889-9bda-1461d72d318a)
+
 #### User Logout
 ```
 http://127.0.0.1:8000/auth/token/logout/
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Auth token</th>
+			<th>Required Fields</th>
+			<th>Status code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>POST</td>
+			<td>User logout</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>204 No Content</td>
+		</tr>
+	</tbody>
+</table>
+
+![image](https://github.com/user-attachments/assets/b2c09e07-68eb-42d0-99fd-e88775625f7d)
+
 ### API Endpoints
 #### Menu Items
 ```
 http://127.0.0.1:8000/api/menu-items/
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Role</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Get all menu items</td>
+			<td>Customers<br>Delivery Crew<br>Managers<br>Admin</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>POST</td>
+			<td>Add menu item</td>
+			<td>Managers<br>Admin</td>
+			<td>"title",<br>"price",<br>"featured" (true, false),<br>"category_id"</td>
+			<td>201 Created</td>
+		</tr>
+	</tbody>
+</table>
+
+*Example of a POST request for adding a menu item, authorized as a manager:*
+![image](https://github.com/user-attachments/assets/b2d06c5f-8a9f-44cf-bf64-eb5040a9c7fa)
+
 #### Single Menu Item
 ```
 http://127.0.0.1:8000/api/menu-items/{id}
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Role</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Get menu item</td>
+			<td>Customers<br>Delivery Crew<br>Managers<br>Admin</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>PUT</td>
+			<td>Update menu item</td>
+			<td>Managers<br>Admin</td>
+			<td>"title",<br>"price",<br>"featured",<br>"category_id"</td>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>PATCH</td>
+			<td>Update menu item</td>
+			<td>Managers<br>Admin</td>
+			<td>"title",<br>"price",<br>"featured",<br>"category_id"</td>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>DELETE</td>
+			<td>Delete menu item</td>
+			<td>Managers<br>Admin</td>
+			<th>-</th>
+			<td>204 No Content</td>
+		</tr>
+	</tbody>
+</table>
+
+*Example of a PUT request with the required request fields:*
+![image](https://github.com/user-attachments/assets/7d77388a-1d03-455d-82f7-f61c0228fccc)
+
 #### Categories
 ```
 http://127.0.0.1:8000/api/category/
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Role</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Get all categories</td>
+			<td>Customers<br>Delivery Crew<br>Managers<br>Admin</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>POST</td>
+			<td>Add category</td>
+			<td>Managers<br>Admin</td>
+			<td>"slug",<br>"title"</td>
+			<td>201 Created</td>
+		</tr>
+	</tbody>
+</table>
+
+*Example of a POST request for adding a category:*
+![image](https://github.com/user-attachments/assets/1a64cda6-2eb2-4ebd-ac46-90dfbc74706f)
+
 #### Single Category
 ```
-http://127.0.0.1:8000/api/category/{id}
+http://127.0.0.1:8000/api/category/{slug}
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Role</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Get category</td>
+			<td>Customers<br>Delivery Crew<br>Manangers<br>Admin</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>POST</td>
+			<td>Not allowed</td>
+			<th>-</th>
+			<th>-</th>
+			<td>403 Forbidden</td>
+		</tr>
+		<tr>
+			<td>PUT</td>
+			<td>Update category</td>
+			<td>Managers<br>Admin</td>
+			<td>"slug",<br>"title"</td>
+			<td>205 Reset Content</td>
+		</tr>
+		<tr>
+			<td>PATCH</td>
+			<td>Partially update category</td>
+			<td>Managers<br>Admin</td>
+			<td>"slug",<br>AND/OR:<br>"title"</td>
+			<td>205 Reset Content</td>
+		</tr>
+		<tr>
+			<td>DELETE</td>
+			<td>Delete category</td>
+			<td>Managers<br>Admin</td>
+			<th>-</th>
+			<td>204 No Content</td>
+		</tr>
+	</tbody>
+</table>
+
+*Example of a PUT request for renaming the category:*
+![image](https://github.com/user-attachments/assets/04151b15-7e95-4727-9a38-f1724d3025fa)
+
 #### Managers
 ```
 http://127.0.0.1:8000/api/groups/manager/users/
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Role</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>POST</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+		<tr>
+			<td>DELETE</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+	</tbody>
+</table>
+
 #### Delete Manager
 ```
-http://127.0.0.1:8000/api/groups/manager/users{id}
+http://127.0.0.1:8000/api/groups/manager/users/{id}
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Role</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>DELETE</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+	</tbody>
+</table>
+
 #### Delivery Crew
 ```
 http://127.0.0.1:8000/api/groups/delivery-crew/users/
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Role</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>POST</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+	</tbody>
+</table>
+
 #### Delete Delivery Member
 ```
 http://127.0.0.1:8000/api/groups/delivery-crew/users/{id}
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Role</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>DELETE</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+	</tbody>
+</table>
+
 #### Cart Menu Items
 ```
 http://127.0.0.1:8000/api/cart/menu-items/
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Role</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>POST</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+		<tr>
+			<td>DELETE</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+	</tbody>
+</table>
+
 #### Orders
 ```
 http://127.0.0.1:8000/api/orders/
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Role</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>POST</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+	</tbody>
+</table>
+
 #### Single Order
 ```
 http://127.0.0.1:8000/api/orders/{id}
 ```
+<table>
+	<thead>
+		<tr>
+			<th>HTTP Method</th>
+			<th>Action</th>
+			<th>Role</th>
+			<th>Required Fields</th>
+			<th>Status Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET</td>
+			<td>Retrieve user based on token</td>
+			<td>Yes</td>
+			<th>-</th>
+			<td>200 OK</td>
+		</tr>
+		<tr>
+			<td>PUT</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+		<tr>
+			<td>PATCH</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+		<tr>
+			<td>DELETE</td>
+			<td>Create a user</td>
+			<td>No</td>
+			<td>- username<br>- email<br>- password</td>
+			<td>201 Created</td>
+		</tr>
+	</tbody>
+</table>
+
 ## Admin Panel
         
