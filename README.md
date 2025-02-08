@@ -290,7 +290,7 @@ http://127.0.0.1:8000/api/category/
 
 #### Single Category
 ```
-http://127.0.0.1:8000/api/category/{id}
+http://127.0.0.1:8000/api/category/{slug}
 ```
 <table>
 	<thead>
