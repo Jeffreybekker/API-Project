@@ -245,7 +245,7 @@ http://127.0.0.1:8000/api/menu-items/{id}
 		<tr>
 			<td>DELETE</td>
 			<td>Delete menu item</td>
-			<td>No</td>
+			<td>Managers<br>Admin</td>
 			<td>- username<br>- email<br>- password</td>
 			<td>201 Created</td>
 		</tr>
