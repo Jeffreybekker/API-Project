@@ -231,26 +231,30 @@ http://127.0.0.1:8000/api/menu-items/{id}
 		<tr>
 			<td>PUT</td>
 			<td>Update menu item</td>
-			<td>No</td>
-			<td>- username<br>- email<br>- password</td>
-			<td>201 Created</td>
+			<td>Managers<br>Admin</td>
+			<td>"title",<br>"price",<br>"featured",<br>"category_id"</td>
+			<td>200 OK</td>
 		</tr>
 		<tr>
 			<td>PATCH</td>
 			<td>Partially update menu item</td>
 			<td>No</td>
-			<td>- username<br>- email<br>- password</td>
+			<td>"title",<br>"price",<br>"featured",<br>"category_id"</td>
 			<td>201 Created</td>
 		</tr>
 		<tr>
 			<td>DELETE</td>
 			<td>Delete menu item</td>
 			<td>Managers<br>Admin</td>
-			<td>- username<br>- email<br>- password</td>
-			<td>201 Created</td>
+			<th>-</th>
+			<td>204 No Content</td>
 		</tr>
 	</tbody>
 </table>
+
+*Example of a PUT request with the required request fields:*
+![image](https://github.com/user-attachments/assets/7d77388a-1d03-455d-82f7-f61c0228fccc)
+
 
 #### Categories
 ```
