@@ -193,7 +193,7 @@ http://127.0.0.1:8000/api/menu-items/
 		</tr>
 		<tr>
 			<td>POST</td>
-			<td>Add a menu item</td>
+			<td>Add menu item</td>
 			<td>Managers<br>Admin</td>
 			<td>"title",<br>"price",<br>"featured" (true, false),<br>"category_id"</td>
 			<td>201 Created</td>
@@ -221,7 +221,7 @@ http://127.0.0.1:8000/api/menu-items/{id}
 	<tbody>
 		<tr>
 			<td>GET</td>
-			<td>Get a menu item</td>
+			<td>Get menu item</td>
 			<td>Customers<br>Delivery Crew<br>Managers<br>Admin</td>
 			<th>-</th>
 			<td>200 OK</td>
@@ -277,7 +277,7 @@ http://127.0.0.1:8000/api/category/
 		</tr>
 		<tr>
 			<td>POST</td>
-			<td>Add a category</td>
+			<td>Add category</td>
 			<td>Managers<br>Admin</td>
 			<td>"slug",<br>"title"</td>
 			<td>201 Created</td>
@@ -305,7 +305,7 @@ http://127.0.0.1:8000/api/category/{id}
 	<tbody>
 		<tr>
 			<td>GET</td>
-			<td>Get a category</td>
+			<td>Get category</td>
 			<td>Customers<br>Delivery Crew<br>Manangers<br>Admin</td>
 			<th>-</th>
 			<td>200 OK</td>
@@ -319,21 +319,21 @@ http://127.0.0.1:8000/api/category/{id}
 		</tr>
 		<tr>
 			<td>PUT</td>
-			<td>Update a category</td>
+			<td>Update category</td>
 			<td>Managers<br>Admin</td>
 			<td>"slug",<br>"title"</td>
 			<td>205 Reset Content</td>
 		</tr>
 		<tr>
 			<td>PATCH</td>
-			<td>Partially update a category</td>
+			<td>Partially update category</td>
 			<td>Managers<br>Admin</td>
 			<td>"slug",<br>AND/OR:<br>"title"</td>
 			<td>205 Reset Content</td>
 		</tr>
 		<tr>
 			<td>DELETE</td>
-			<td>Delete a category</td>
+			<td>Delete category</td>
 			<td>Managers<br>Admin</td>
 			<th>-</th>
 			<td>204 No Content</td>
