@@ -6,7 +6,7 @@ urlpatterns = [
     path('menu-items/<int:id>', views.single_item),
     
     path('category/', views.category),
-    path('category/<int:id>', views.single_category),
+    path('category/<slug:slug>', views.single_category),
     
     path('groups/manager/users/', views.Managers),
     path('groups/manager/users/<int:id>', views.manager_delete),

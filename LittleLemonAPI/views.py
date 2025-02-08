@@ -23,7 +23,7 @@ def menu_items(request):
         to_price = request.query_params.get('to_price')
         search = request.query_params.get('search')
         ordering = request.query_params.get('ordering')
-        perpage = request.query_params.get('perpage', default=2)
+        perpage = request.query_params.get('perpage', default=4)
         page = request.query_params.get('page', default=1)
         if category_name:
             items = items.filter(category__title=category_name)
@@ -35,7 +35,7 @@ def menu_items(request):
             ordering_fields = ordering.split(",")
             items = items.order_by(*ordering_fields)
         
-        paginator = Paginator(items,per_page=perpage)
+        paginator = Paginator(items, per_page=perpage)
         try:
             items = paginator.page(number=page)
         except EmptyPage:
@@ -149,14 +149,14 @@ def category(request):
 # URL: /api/category/<int:id>
 @api_view(['GET', 'POST', 'PUT', 'PATCH', 'DELETE'])
 @permission_classes([IsAuthenticated])
-def single_category(request, id):
-    item = get_object_or_404(Category, pk=id)
+def single_category(request, slug):
+    item = get_object_or_404(Category, slug=slug)
     if request.method == 'GET':
         serialized_item = CategorySerializer(item)
         return Response(serialized_item.data, status.HTTP_200_OK)
     
     elif request.method == 'POST':
-        return Response({"message": "You are not authorized"}, status.HTTP_403_FORBIDDEN)
+        return Response({"message": "POSTS requests forbidden."}, status.HTTP_403_FORBIDDEN)
     
     if not request.user.groups.filter(name='Manager').exists():
         return Response({"message": "You are not authorized."}, status.HTTP_403_FORBIDDEN)
