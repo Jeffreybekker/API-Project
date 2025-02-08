@@ -237,8 +237,8 @@ http://127.0.0.1:8000/api/menu-items/{id}
 		</tr>
 		<tr>
 			<td>PATCH</td>
-			<td>Partially update menu item</td>
-			<td>No</td>
+			<td>Update menu item</td>
+			<td>Managers<br>Admin</td>
 			<td>"title",<br>"price",<br>"featured",<br>"category_id"</td>
 			<td>201 Created</td>
 		</tr>
