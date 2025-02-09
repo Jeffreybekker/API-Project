@@ -454,7 +454,6 @@ http://127.0.0.1:8000/api/groups/delivery-crew/users/
 *Example of adding a user to the delivery crew:*
 ![image](https://github.com/user-attachments/assets/339ddf88-ee17-4922-8e77-822a219a0561)
 
-
 #### Delete Delivery Member
 ```
 http://127.0.0.1:8000/api/groups/delivery-crew/users/{id}
@@ -472,13 +471,16 @@ http://127.0.0.1:8000/api/groups/delivery-crew/users/{id}
 	<tbody>
 		<tr>
 			<td>DELETE</td>
-			<td>Retrieve user based on token</td>
-			<td>Yes</td>
+			<td>Delete user from the delivery crew</td>
+			<td>Managers</td>
 			<th>-</th>
 			<td>200 OK</td>
 		</tr>
 	</tbody>
 </table>
+
+*Example of deleting a user from the delivery crew:*
+![image](https://github.com/user-attachments/assets/71b133c4-db9c-4140-bb8a-188b5af045af)
 
 #### Cart Menu Items
 ```
