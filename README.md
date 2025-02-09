@@ -312,7 +312,7 @@ http://127.0.0.1:8000/api/category/{slug}
 		</tr>
 		<tr>
 			<td>POST</td>
-			<td>Not allowed</td>
+			<td>Forbidden</td>
 			<th>-</th>
 			<th>-</th>
 			<td>403 Forbidden</td>
@@ -342,11 +342,11 @@ http://127.0.0.1:8000/api/category/{slug}
 </table>
 
 *Example of a PUT request for renaming the category:*
+<br>
 *URL was http://127.0.0.1:8000/api/category/Fruits*
 ![image](https://github.com/user-attachments/assets/f70f0fd8-5f4a-479c-ad3f-1ab4b13daf70)
 
 *After the category update, the URL is now http://127.0.0.1:8000/api/category/Fruit-Smoothie*
-
 
 #### Managers
 ```
@@ -365,27 +365,31 @@ http://127.0.0.1:8000/api/groups/manager/users/
 	<tbody>
 		<tr>
 			<td>GET</td>
-			<td>Retrieve user based on token</td>
-			<td>Yes</td>
+			<td>Get all managers</td>
+			<td>Managers</td>
 			<th>-</th>
 			<td>200 OK</td>
 		</tr>
 		<tr>
 			<td>POST</td>
-			<td>Create a user</td>
-			<td>No</td>
-			<td>- username<br>- email<br>- password</td>
+			<td>Add user to the manager group</td>
+			<td>Managers</td>
+			<td>"username"</td>
 			<td>201 Created</td>
 		</tr>
 		<tr>
 			<td>DELETE</td>
-			<td>Create a user</td>
-			<td>No</td>
-			<td>- username<br>- email<br>- password</td>
-			<td>201 Created</td>
+			<td>Forbidden</td>
+			<th>-</th>
+			<td></td>
+			<td>403 Forbidden</td>
 		</tr>
 	</tbody>
 </table>
+
+*Example of adding a user to the manager group:*
+![image](https://github.com/user-attachments/assets/ef874669-4cbd-45c2-96fc-9d5808cca83b)
+
 
 #### Delete Manager
 ```
