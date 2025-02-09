@@ -372,7 +372,7 @@ http://127.0.0.1:8000/api/groups/manager/users/
 		</tr>
 		<tr>
 			<td>POST</td>
-			<td>Add user to the manager group</td>
+			<td>Add user to manager group</td>
 			<td>Managers</td>
 			<td>"username"</td>
 			<td>201 Created</td>
@@ -381,7 +381,7 @@ http://127.0.0.1:8000/api/groups/manager/users/
 			<td>DELETE</td>
 			<td>Forbidden</td>
 			<th>-</th>
-			<td></td>
+			<th>-</th>
 			<td>403 Forbidden</td>
 		</tr>
 	</tbody>
@@ -408,9 +408,9 @@ http://127.0.0.1:8000/api/groups/manager/users/{id}
 	<tbody>
 		<tr>
 			<td>DELETE</td>
-			<td>Retrieve user based on token</td>
-			<td>Yes</td>
-			<th>-</th>
+			<td>Delete user from the manager group</td>
+			<td>Managers</td>
+			<th>"username"</th>
 			<td>200 OK</td>
 		</tr>
 	</tbody>
