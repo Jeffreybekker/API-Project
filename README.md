@@ -419,7 +419,6 @@ http://127.0.0.1:8000/api/groups/manager/users/{id}
 *Example of deleting a user from the manager group:*
 ![image](https://github.com/user-attachments/assets/49f587e9-64b8-4d30-90fa-4750e45295eb)
 
-
 #### Delivery Crew
 ```
 http://127.0.0.1:8000/api/groups/delivery-crew/users/
@@ -437,20 +436,24 @@ http://127.0.0.1:8000/api/groups/delivery-crew/users/
 	<tbody>
 		<tr>
 			<td>GET</td>
-			<td>Retrieve user based on token</td>
-			<td>Yes</td>
+			<td>Get all delivery members</td>
+			<td>Managers</td>
 			<th>-</th>
 			<td>200 OK</td>
 		</tr>
 		<tr>
 			<td>POST</td>
-			<td>Create a user</td>
-			<td>No</td>
-			<td>- username<br>- email<br>- password</td>
+			<td>Add user to delivery crew</td>
+			<td>Managers</td>
+			<td>"username"</td>
 			<td>201 Created</td>
 		</tr>
 	</tbody>
 </table>
+
+*Example of adding a user to the delivery crew:*
+![image](https://github.com/user-attachments/assets/339ddf88-ee17-4922-8e77-822a219a0561)
+
 
 #### Delete Delivery Member
 ```
