@@ -342,7 +342,11 @@ http://127.0.0.1:8000/api/category/{slug}
 </table>
 
 *Example of a PUT request for renaming the category:*
-![image](https://github.com/user-attachments/assets/04151b15-7e95-4727-9a38-f1724d3025fa)
+*URL was http://127.0.0.1:8000/api/category/Fruits*
+![image](https://github.com/user-attachments/assets/f70f0fd8-5f4a-479c-ad3f-1ab4b13daf70)
+
+*After the category update, the URL is now http://127.0.0.1:8000/api/category/Fruit-Smoothie*
+
 
 #### Managers
 ```
