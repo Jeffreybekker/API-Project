@@ -410,11 +410,15 @@ http://127.0.0.1:8000/api/groups/manager/users/{id}
 			<td>DELETE</td>
 			<td>Delete user from the manager group</td>
 			<td>Managers</td>
-			<th>"username"</th>
+			<td>"username"</dh>
 			<td>200 OK</td>
 		</tr>
 	</tbody>
 </table>
+
+*Example of deleting a user from the manager group:*
+![image](https://github.com/user-attachments/assets/49f587e9-64b8-4d30-90fa-4750e45295eb)
+
 
 #### Delivery Crew
 ```
