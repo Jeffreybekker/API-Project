@@ -500,7 +500,7 @@ http://127.0.0.1:8000/api/cart/menu-items/
 		<tr>
 			<td>GET</td>
 			<td>Get user, menu item and cart information</td>
-			<td>Current customer</td>
+			<td>Customer</td>
 			<th>-</th>
 			<td>200 OK</td>
 		</tr>
@@ -522,8 +522,8 @@ http://127.0.0.1:8000/api/cart/menu-items/
 </table>
 
 *Example of a GET request to retrieve the cart:* <br>
-*Note: you can only get the cart items if you made a POST request before:*
 ![image](https://github.com/user-attachments/assets/069f0f6a-782f-4bf2-bdce-a4935bab9490)
+	*Note: you can only get the cart items after you made a POST request.*
 
 #### Orders
 ```
