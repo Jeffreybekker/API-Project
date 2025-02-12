@@ -499,27 +499,31 @@ http://127.0.0.1:8000/api/cart/menu-items/
 	<tbody>
 		<tr>
 			<td>GET</td>
-			<td>Retrieve user based on token</td>
-			<td>Yes</td>
+			<td>Get user, menu item and cart information</td>
+			<td>Current costumer</td>
 			<th>-</th>
 			<td>200 OK</td>
 		</tr>
 		<tr>
 			<td>POST</td>
-			<td>Create a user</td>
-			<td>No</td>
-			<td>- username<br>- email<br>- password</td>
+			<td>Create a cart</td>
+			<td>Customer</td>
+			<td>"menuitem", (id item)<br>"quantity"</td>
 			<td>201 Created</td>
 		</tr>
 		<tr>
 			<td>DELETE</td>
-			<td>Create a user</td>
-			<td>No</td>
-			<td>- username<br>- email<br>- password</td>
-			<td>201 Created</td>
+			<td>Delete cart</td>
+			<td>Customer</td>
+			<th>-</th>
+			<td>200 OK</td>
 		</tr>
 	</tbody>
 </table>
+
+*Example of a GET request to retrieve the cart:*
+*Note: you can only get the cart items if you made a POST request before:*
+![image](https://github.com/user-attachments/assets/069f0f6a-782f-4bf2-bdce-a4935bab9490)
 
 #### Orders
 ```
