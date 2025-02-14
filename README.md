@@ -508,7 +508,7 @@ http://127.0.0.1:8000/api/cart/menu-items/
 			<td>POST</td>
 			<td>Create cart</td>
 			<td>Customer</td>
-			<td>"menuitem", (item id)<br>"quantity"</td>
+			<td>"menuitem", (id)<br>"quantity"</td>
 			<td>201 Created</td>
 		</tr>
 		<tr>
