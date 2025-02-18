@@ -1,4 +1,8 @@
 # Little Lemon API Restaurant
+The Little Lemon API is an API that is used for the Little Lemon restaurant. Little Lemon's management wants to have an order management system that allows customers to browse the menu, view specific items and place and watch their orders. The managers must be able to assign roles to their workers for the functions 'delivery crew' and 'management team'. The managers are also able to use CRUD operations for the menu items and categories. These functions are secured through authentication and authorization, ensuring that only authorized users can access sensitve operations. 
+The project is built using Django and Django REST Framework (DRF) and relies on serializers and deserializers to handle data conversion between Django models and JSON responses. Serializers ensure that data sent to the client is properly formatted, while deserializers validate and process incoming data before storing it in the database.
+
+Additionally, the API supports filtering, searching, and pagination to enhance menu navigation. To improve security, permissions and throttling are implemented, controlling access and preventing abuse of system resources.
 
 ## Table of Contents
 * [Little Lemon API Restaurant](#little-lemon-api-restaurant)
