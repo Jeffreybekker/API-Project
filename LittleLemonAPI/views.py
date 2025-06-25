@@ -1,13 +1,12 @@
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes, throttle_classes
-from .models import MenuItem, Category
-from .serializers import *
+from .models import MenuItem, Category, Cart, OrderItem, Order
+from .serializers import CategorySerializer, MenuItemSerializer, UserSerializer, CartSerializer, OrderItemSerializer, OrderSerializer
 from django.shortcuts import get_object_or_404
 from rest_framework import status
 from django.core.paginator import Paginator, EmptyPage
-from rest_framework import viewsets
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
-from .permissions import *
+from .permissions import IsManagerUser
 from rest_framework.throttling import AnonRateThrottle, UserRateThrottle
 from django.contrib.auth.models import User, Group
 from decimal import Decimal
